@@ -16,7 +16,7 @@ int main(){
 	for(int i = 0; i < 10; i++) cout << i << endl;
 
 	//Do...while igual, mas vamos ver como trabalhar com strings e receber coisas do usuario
-	string chute; //Aqui, tal qual c, o string é um array de caracteres para a maioria dos efeitos
+	string chute; //Aqui, diferente de c e tal qual java, o string é objeto e n um array de caracteres
 	int chuteValor = 0;
 	do{
 		cout << "Choose your destiny between 1 and 10" << endl;
@@ -24,6 +24,7 @@ int main(){
 		chuteValor = stoi(chute); //String to Int, transformar um string em um int
 	}while(chuteValor != 4);
 	cout << "You Die.. Zuera" << endl << endl;
+	//Fazer isso no terminal sem acesso do adm pode fazer seu antivirus te fuder :v
 
 	//while também é igual, mas veja como gera um número randômico dentre 1 até 100, caso seja 0 até 99, basta não somar nada
 	int randNum = (rand() % 100) + 50;
